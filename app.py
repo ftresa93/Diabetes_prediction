@@ -14,13 +14,13 @@ st.set_page_config(page_title="Diabetes Prediction", page_icon="🩺")
 st.title("🩺 Diabetes Prediction")
 st.write("Enter the feature values below to predict the diagnosis.")
 # User Inputs
-Glucose = st.number_input("Glucose", min_value=0.0, format="%.2f")
-Body_mass_index = st.number_input("BMI", min_value=0.0, format="%.2f")
-Age = st.number_input("Age", min_value=0, format="%d")
-Insulin = st.number_input("Insulin", min_value=0.0, format="%.2f")
-SkinThickness = st.number_input("SkinThickness", min_value=0.0, format="%.2f")
-DiabetesPedigreeFunction = st.number_input("DiabetesPedigreeFunction", min_value=0.0, format="%.3f")
-Pregnancies = st.number_input("Pregnancies", min_value=0, format="%d")
+Glucose = st.number_input("Glucose", min_value=0.0, format="%.4f")
+Body_mass_index = st.number_input("BMI", min_value=0.0, format="%.4f")
+Age = st.number_input("Age", min_value=0, format="%.4f")
+Insulin = st.number_input("Insulin", min_value=0.0, format="%.4f")
+SkinThickness = st.number_input("SkinThickness", min_value=0.0, format="%.4f")
+DiabetesPedigreeFunction = st.number_input("DiabetesPedigreeFunction", min_value=0.0, format="%.4f")
+Pregnancies = st.number_input("Pregnancies", min_value=0, format="%.4f")
 
 if st.button("Predict Diagnosis"):
     input_data = np.array([[
