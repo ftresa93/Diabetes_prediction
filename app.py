@@ -19,7 +19,7 @@ Body_mass_index = st.number_input("BMI", min_value=0.0, format="%.2f")
 Age = st.number_input("Age", min_value=0, format="%d")
 Insulin = st.number_input("Insulin", min_value=0.0, format="%.2f")
 SkinThickness = st.number_input("SkinThickness", min_value=0.0, format="%.2f")
-DiabetesPedigreeFunction = st.number_input("DiabetesPedigreeFunction", min_value=0.0, format="%.2f")
+DiabetesPedigreeFunction = st.number_input("DiabetesPedigreeFunction", min_value=0.0, format="%.3f")
 Pregnancies = st.number_input("Pregnancies", min_value=0, format="%d")
 
 if st.button("Predict Diagnosis"):
